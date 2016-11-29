@@ -16,10 +16,10 @@ function LCController($scope) {
     for (var i=0; i < items.length; i++) {
       if (items[i] !== "" && items[i] !== " " ) counter += 1;
     };
-
-    if (counter = 0) {
+    console.log(counter);
+    if (counter === 0) {
       $scope.message = 'Please enter data first';
-      
+
 
     }
     else if (counter < 4) {
