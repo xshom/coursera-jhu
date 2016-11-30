@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
-      .message { font-size: 1.3em; font-weight: bold; }
+      .message { font-size: 1.3em; font-weight: bold; width: 200px;}
+      .empty_true {
+        border: 1px solid red;
+      }
+      .empty_false {
+        border: 1px solid green;
+      }
 
 
     </style>
@@ -24,7 +30,7 @@
          <div class="form-group">
              <button class="btn btn-default" ng-click="showMessage()">Check If Too Much</button>
          </div>
-         <div class="form-group message">
+         <div class="form-group message empty_{{emptiness}}" >
            {{message}}
          </div>
    </div>
